@@ -1,0 +1,25 @@
+filters:
+  and:
+    - file.hasTag("chats")
+    - file.inFolder("Chats")
+formulas:
+  status_icon: 'if(status == "processed", "✅ Processed", if(status == "new", "🆕 New", if(status == "archived", "🗄️ Archived", if(status == "example", "📘 Example", "⚪ Unknown"))))'
+  open_url: 'if(url, link(url, "فتح الرابط"), "")'
+properties:
+  chat_date:
+    displayName: "Date"
+  project:
+    displayName: "Project"
+  formula.status_icon:
+    displayName: "Status"
+  formula.open_url:
+    displayName: "Source"
+views:
+  - type: table
+    name: "All Chats"
+    order:
+      - chat_date
+      - file.name
+      - project
+      - formula.status_icon
+      - formula.open_url

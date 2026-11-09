@@ -1,0 +1,23 @@
+filters:
+  and:
+    - file.hasTag("references")
+    - file.inFolder("References")
+formulas:
+  stars: 'if(rating, repeat("★", rating), "☆")'
+properties:
+  author:
+    displayName: "Author"
+  rating:
+    displayName: "Rating /7"
+  formula.stars:
+    displayName: "Stars"
+  date:
+    displayName: "Added"
+views:
+  - type: table
+    name: "All References"
+    order:
+      - file.name
+      - author
+      - formula.stars
+      - date

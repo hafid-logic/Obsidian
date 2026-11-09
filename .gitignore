@@ -1,0 +1,14 @@
+# Obsidian machine-specific state — لا تُرفع
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/plugin-manager.json
+.trash/
+.DS_Store
+
+# أمان — المفاتيح والأسعار لا تعيش في مستودع، أبداً
+*.pem
+id_rsa*
+id_ed25519*
+*.key
+*.secret

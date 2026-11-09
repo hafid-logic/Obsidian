@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "a1f0c2d3e4b50617",
+      "type": "group",
+      "x": -80,
+      "y": -80,
+      "width": 1220,
+      "height": 620,
+      "color": "2",
+      "label": "Vault Map — الخزنة المترابطة"
+    },
+    {
+      "id": "b2e1d3c4f5a60718",
+      "type": "file",
+      "x": 0,
+      "y": 40,
+      "width": 340,
+      "height": 180,
+      "file": "Home.md"
+    },
+    {
+      "id": "c3d2e4f5a6b70819",
+      "type": "file",
+      "x": 420,
+      "y": 40,
+      "width": 380,
+      "height": 180,
+      "color": "2",
+      "file": "Projects/Example Project.md"
+    },
+    {
+      "id": "d4c3f5a6b7c8091a",
+      "type": "file",
+      "x": 420,
+      "y": 300,
+      "width": 380,
+      "height": 160,
+      "color": "5",
+      "file": "Chats/2026-11-10 Obsidian Onboarding.md"
+    },
+    {
+      "id": "e5b4a6b7c8d90a1b",
+      "type": "file",
+      "x": 860,
+      "y": 40,
+      "width": 240,
+      "height": 180,
+      "file": "References/Obsidian.md"
+    },
+    {
+      "id": "f6a5b7c8d9ea0b1c",
+      "type": "text",
+      "x": 0,
+      "y": 300,
+      "width": 340,
+      "height": 160,
+      "text": "## دليل الألوان (Legend)\n\n- 🟠 **برتقالي** = Master notes (المشاريع)\n- 🔵 **أزرق** = ملاحظات المحادثات\n- ⚪ **أبيض** = صفحات النظام والمراجع\n\nكل مشروع يجذب محادثاته ومراجعه عبر الروابط — راقب ذلك في Graph View."
+    }
+  ],
+  "edges": [
+    {
+      "id": "01ab2c3d4e5f6071",
+      "fromNode": "b2e1d3c4f5a60718",
+      "fromSide": "right",
+      "toNode": "c3d2e4f5a6b70819",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "يضم"
+    },
+    {
+      "id": "02bc3d4e5f607182",
+      "fromNode": "c3d2e4f5a6b70819",
+      "fromSide": "bottom",
+      "toNode": "d4c3f5a6b7c8091a",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "توثّق قراراته"
+    },
+    {
+      "id": "03cd4e5f60718293",
+      "fromNode": "c3d2e4f5a6b70819",
+      "fromSide": "right",
+      "toNode": "e5b4a6b7c8d90a1b",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "يستند إليه"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "attachmentFolderPath": "Attachments",
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": false,
+  "showLineNumber": true,
+  "readableLineLength": true,
+  "promptDelete": false,
+  "trashOption": "system",
+  "showUnsupportedFiles": true,
+  "propertiesInDocument": "visible",
+  "autoPairMarkdown": true
+}

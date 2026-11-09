@@ -1,0 +1,22 @@
+filters:
+  and:
+    - file.hasTag("projects")
+    - file.inFolder("Projects")
+formulas:
+  age_days: '(now() - file.ctime).days.round(0)'
+  status_icon: 'if(status == "active", "🟢 Active", if(status == "paused", "🟡 Paused", if(status == "done", "✅ Done", if(status == "example", "📘 Example", "⚪ Unknown"))))'
+properties:
+  formula.status_icon:
+    displayName: "Status"
+  date:
+    displayName: "Created"
+  formula.age_days:
+    displayName: "Days"
+views:
+  - type: table
+    name: "All Projects"
+    order:
+      - file.name
+      - formula.status_icon
+      - date
+      - formula.age_days
