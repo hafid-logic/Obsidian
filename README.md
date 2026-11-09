@@ -1,3 +1,11 @@
+---
+type: report
+date: 2026-11-10
+status: ready
+tags:
+  - reports
+---
+
 # 🏔️ Obsidian Vault — تقرير الجاهزية (Readiness Report)
 
 > **الإصدار:** 1.0.0 · **التاريخ:** 2026-11-10 · **الحالة:** ✅ **جاهز للاستلام**
