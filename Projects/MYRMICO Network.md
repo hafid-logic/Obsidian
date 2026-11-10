@@ -27,9 +27,10 @@ aliases:
 - ([[2026-11-10 MYRMICO Security Audit]]): تدقيق 48 نتيجة (7 Critical/14 High/16 Medium/8 Low/3 Info) و5 سيناريوهات Red-Team (Guardian Capture، Φ Whisperer، Wilaya Break، Quorum Sealer، Bootstrap Backdoor) — **الحكم: غير جاهز للإنتاج**؛ خطة P0 أولاً: نضج bootstrap، تثبيت FROST/MuSig2، إعادة تفعيل SEC-2، ثم تدقيق خارجي ثالث.
 - ([[2026-11-10 MYRMICO Rust Completion]]): بعد فقدان ملفات الجلسة السابقة (51 ملفاً/87 اختباراً/~15% رودماب) — تنفيذ 18 وحدة جديدة (F-02 dropout Kalman، F-03 PQC ML-KEM+X25519، F-05 FraudProof، F-06 PoSt، F-09 SNS، F-10 S3، O7 GF(2^8)...)؛ إصلاحان حرجان: verify_withdrawal صارت تتحقق بتوقيع Ed25519 (كانت true دائماً!) وLAW-2 mint window gate؛ القيود: صفر f64 (Q16.16)، 4 عائلات دمج، 5 أنواع احتيال.
 - ([[2026-11-10 MYRMICO F17]] و[[2026-11-10 MYRMICO F18]]): توجيهان تنفيذيان للميزتين 17 و18 في خارطة الطريق (F17: 6 أقسام/7 خطوات مستندات/4 كود/16 نقطة تحقق؛ F18: أمر دمج v1 بـ16 فحصاً بعد الانتهاء و16 بنداً ممنوع لمسه).
+- ([[2026-05-08 Myrmico Microscopic Audits]]): خمس جولات مراجعة مجهرية بهدف حتمية 99% على Waves 3+4 (Bloom Filter، BondSlasher، FederatedAggregator، Scheduler) وتقرير Manifolds — تصاعدت الوثائق v1→v4 واعتماد ==v4 بـ37 تصحيحاً في 6 جولات== (نوافذ replay، bloom probes، PRNG، محاذاة unsafe)؛ ورفض Claude توجيه «SYSTEM DIRECTIVE» بوصفه prompt injection مع الانخراط في مضمونه التقني.
 
 ## المهام (Tasks)
-- [ ] **حذف وتدوير التوكن الذي نُشر نصاً في محادثة التنفيذ** (حُجب في النسخة المحفوظة).
+- [x] تدوير التوكن الذي نُشر نصاً في محادثة التنفيذ (حُجب في النسخة المحفوظة) — **أكّد hafid إبطال كل التوكنات بتاريخ 2026-11-10**.
 - [ ] تنفيذ خطة إصلاح P0 (3 بنود) ثم P1 (~10 أسابيع).
 - [ ] معايرة THETA_C2D وتفعيل DEV_TAX_FRACTION وبوابات الإيرادات (Phase 6 = 0%).
 - [ ] اختبار 100+ عقدة وتشغيل استقرار 30 يوماً.

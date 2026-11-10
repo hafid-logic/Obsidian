@@ -1,0 +1,36 @@
+---
+type: project
+status: active
+date: 2026-11-10
+tags:
+  - projects
+aliases:
+  - deglet nour
+  - منصة دقلة نور
+---
+
+# Deglet Nour Platform
+
+> [!abstract] الهدف (Goal)
+> منصة شاملة لبيع التمور الجزائرية (دقلة نور) محلياً ودولياً — تتبع QR، بلوكشين للموثوقية، تسعير AI حسب تقييم المزارعين، وكل ذلك بكلفة شبه صفرية في الطور الأول.
+
+## النطاق (Scope)
+- يشمل: FastAPI + PostgreSQL + Redis + Celery، Next.js 14 + TailwindCSS، Polygon/Ethereum + IPFS + عقود Solidity، تسعير Random Forest، لوجستيات 58 ولاية (4 شركات محلية + 4 دولية، Haversine)، مدفوعات COD/CIB Gold/Poste Mobile/Stripe/PayPal، وأمان 7 طبقات.
+- لا يشمل: طبقة الاستشعار الميدانية — تلك نطاق [[Digital Twin Cold Chain]] الشقيق.
+
+## المحادثات المرتبطة (Linked Chats)
+![[Project Chats.base]]
+
+## القرارات (Decisions)
+- ([[2026-01-19 Deglet Nour Platform]]): ==كلفة الطور الأول $0-5 شهرياً (0-100 مستخدم)== عبر Vercel وSupabase وCloudflare وPolygon Mumbai وPinata (1GB) ونماذج AI محلية.
+- ([[2026-01-19 Deglet Nour Platform]]): الدفع عند الاستلام (COD) خيار أساسي لا إضافي — قيد صارم للسوق الجزائري؛ مع CIB Gold وPoste Mobile محلياً وStripe/PayPal دولياً.
+- ([[2026-01-19 Deglet Nour Platform]]): عقود Solidity للتتبع + IPFS للوثائق + Random Forest للتسعير بمدخلات تقييم المزارعين الموزونة.
+
+## المهام (Tasks)
+- [ ] تجميع ملفات المشروع من المحادثة إلى مستودع كود فعلي.
+- [ ] دراسة التكامل مع [[Digital Twin Cold Chain]] (نفس السلعة، تتبع مشترك محتمل).
+
+## الملاحظات المترابطة (Related Notes)
+- [[Digital Twin Cold Chain]] — الشقيق اللوجستي للمنصة.
+- [[Aladdin Algeria]] — تقاطع تجارة التمور وذكاء الأسواق الحقيقية.
+- [[Home]]
