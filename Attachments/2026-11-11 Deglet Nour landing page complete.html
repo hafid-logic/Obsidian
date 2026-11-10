@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== SEO (كان ناقصاً في التحليل — أُضيف) ===== -->
+    <title>دقلة نور الأصلية من واحات بسكرة | توصيل لكل ولايات الجزائر</title>
+    <meta name="description" content="تمور دقلة نور فاخرة من قلب واحات بسكرة — فرز يدوي وتعبئة نظيفة وتوصيل إلى 58 ولاية. اطلب صندوقك الآن مع الدفع عند الاستلام.">
+    <meta property="og:title" content="دقلة نور الأصلية من واحات بسكرة 🌴">
+    <meta property="og:description" content="من النخلة إلى بابك مباشرة — توصيل لكل ولايات الجزائر الـ58. اطلب الآن.">
+    <meta property="og:type" content="product">
+    <meta property="og:locale" content="ar_DZ">
+    <!-- ⚠️ استبدل og:image بصورة منتجك الحقيقية بعد رفعها -->
+    <meta property="og:image" content="https://images.unsplash.com/photo-1609103803251-fa950189ebc1?w=1200">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- ⚠️ عدّل السعر في schema أدناه بسعرك الفعلي -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "تمور دقلة نور من بسكرة",
+      "image": "https://images.unsplash.com/photo-1609103803251-fa950189ebc1?w=1200",
+      "description": "تمور دقلة نور فاخرة من واحات بسكرة — فرز يدوي وتعبئة نظيفة وتوصيل لكل ولايات الجزائر.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "DZD",
+        "price": "2500",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
+        .video-bg-container { position: relative; width: 100%; height: 550px; overflow: hidden; }
+        .video-bg { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; z-index: -1; transform: translate(-50%, -50%); object-fit: cover; }
+        .overlay-dark { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1; }
+        .mobile-sticky-btn { display: none; }
+        @media (max-width: 768px) {
+            .mobile-sticky-btn { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 12px; background: white; box-shadow: 0 -5px 15px rgba(0,0,0,0.1); }
+            body { padding-bottom: 84px; }
+        }
+        .scale-up { transform: scale(1.05); transition: all 0.2s ease; }
+        .input-error { border: 2px solid #ef4444 !important; background-color: #fef2f2 !important; }
+
+        /* معرض الصور */
+        .gallery-item { position: relative; overflow: hidden; cursor: pointer; border-radius: 1rem; }
+        .gallery-item img { transition: transform 0.3s ease; }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); padding: 1rem; transform: translateY(100%); transition: transform 0.3s ease; }
+        .gallery-item:hover .gallery-overlay { transform: translateY(0); }
+
+        /* Lightbox */
+        .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; justify-content: center; align-items: center; }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-width: 90%; max-height: 85vh; border-radius: 1rem; box-shadow: 0 0 50px rgba(255,255,255,0.3); }
+        .lightbox-close { position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer; z-index: 10000; }
+        .lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.2); color: white; padding: 1rem; cursor: pointer; font-size: 2rem; border-radius: 50%; user-select: none; }
+        .lightbox-prev { left: 20px; }
+        .lightbox-next { right: 20px; }
+        .lightbox-counter { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; background: rgba(255,255,255,0.15); padding: 0.25rem 1.25rem; border-radius: 9999px; font-size: 0.9rem; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+<!-- ===== الترويسة بفيديو خلفية ===== -->
+<div class="video-bg-container">
+    <!-- ⚠️ استبدل الفيديو بتصوير حقيقي من مزرعتك (أفضل للمصداقية): ضع رابطك داخل source -->
+    <video class="video-bg" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1587241321921-91a834d82ccb?w=1600">
+        <source src="" type="video/mp4">
+    </video>
+    <div class="overlay-dark"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+        <h1 class="text-4xl md:text-6xl font-black mb-4 drop-shadow-lg">دقلة نور الأصلية من واحات بسكرة 🌴</h1>
+        <p class="text-lg md:text-2xl mb-8 drop-shadow">من النخلة إلى بابك مباشرة — فرز يدوي وتعبئة بعناية</p>
+        <a href="#order" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-4 px-10 rounded-full text-lg transition shadow-xl">اطلب الآن 📦</a>
+    </div>
+</div>
+
+<!-- ===== شريط الثقة ===== -->
+<section class="container mx-auto px-4 py-10 max-w-6xl">
+    <!-- ⚠️ عدّل النصوص وفق واقع نشاطك الحقيقي -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+        <div class="bg-white rounded-2xl shadow p-5">
+            <p class="text-3xl mb-2">🌴</p>
+            <p class="font-black text-green-900">من قلب واحات بسكرة</p>
+            <p class="text-sm text-gray-600 mt-1">المنتج يصلك من المصدر مباشرة بلا وسطاء</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-5">
+            <p class="text-3xl mb-2">📦</p>
+            <p class="font-black text-green-900">فرز وتعبئة بعناية</p>
+            <p class="text-sm text-gray-600 mt-1">صناديق محكمة تحفظ الطزاجة حتى باب منزلك</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-5">
+            <p class="text-3xl mb-2">🚚</p>
+            <p class="font-black text-green-900">توصيل لكل الولايات</p>
+            <p class="text-sm text-gray-600 mt-1">58 ولاية — والدفع عند الاستلام متاح</p>
+        </div>
+    </div>
+</section>
+
+<main class="container mx-auto px-4 py-12 max-w-6xl">
+
+    <!-- ===== معرض الصور التفاعلي (قبل «إختر العرض المناسب» كما في التعليمات) ===== -->
+    <section class="mb-16 bg-gradient-to-br from-amber-50 to-green-50 p-8 md:p-12 rounded-[3rem]">
+        <h2 class="text-3xl font-black text-center mb-3 text-green-900">معرض الصور 📸</h2>
+        <p class="text-center text-gray-600 mb-10">اضغط على أي صورة للتكبير والمشاهدة بالتفصيل</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <!-- صورة 1 -->
+            <div class="gallery-item" onclick="openLightbox(0)">
+                <img src="https://images.unsplash.com/photo-1609103803251-fa950189ebc1?w=600" alt="تمور دقلة نور عالية الجودة" loading="lazy" class="w-full h-48 md:h-64 object-cover">
+                <div class="gallery-overlay"><p class="text-white text-sm font-bold">دقلة نور فاخرة</p></div>
+            </div>
+            <!-- صورة 2 -->
+            <div class="gallery-item" onclick="openLightbox(1)">
+                <img src="https://images.unsplash.com/photo-1577003833154-a9a2e0fe1998?w=600" alt="تمور طازجة من بسكرة" loading="lazy" class="w-full h-48 md:h-64 object-cover">
+                <div class="gallery-overlay"><p class="text-white text-sm font-bold">طازجة 100%</p></div>
+            </div>
+            <!-- صورة 3 -->
+            <div class="gallery-item" onclick="openLightbox(2)">
+                <img src="https://images.unsplash.com/photo-1628599091862-62d5b9e0e07f?w=600" alt="تعبئة وتغليف احترافي" loading="lazy" class="w-full h-48 md:h-64 object-cover">
+                <div class="gallery-overlay"><p class="text-white text-sm font-bold">تعبئة نظيفة</p></div>
+            </div>
+            <!-- صورة 4 -->
+            <div class="gallery-item" onclick="openLightbox(3)">
+                <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?w=600" alt="صناديق جاهزة للتوصيل" loading="lazy" class="w-full h-48 md:h-64 object-cover">
+                <div class="gallery-overlay"><p class="text-white text-sm font-bold">جاهز للتوصيل</p></div>
+            </div>
+            <!-- صورة 5 -->
+            <div class="gallery-item" onclick="openLightbox(4)">
+                <img src="https://images.unsplash.com/photo-1587241321921-91a834d82ccb?w=600" alt="نخيل بسكرة" loading="lazy" class="w-full h-48 md:h-64 object-cover">
+                <div class="gallery-overlay"><p class="text-white text-sm font-bold">من واحات بسكرة</p></div>
+            </div>
+            <!-- صورة 6 -->
+            <div class="gallery-item" onclick="openLightbox(5)">
+                <img src="https://images.unsplash.com/photo-1591206369811-4eeb2f03bc95?w=600" alt="جودة مضمونة" loading="lazy" class="w-full h-48 md:h-64 object-cover">
+                <div class="gallery-overlay"><p class="text-white text-sm font-bold">جودة مضمونة</p></div>
+            </div>
+            <!-- صورة 7 -->
+            <div class="gallery-item" onclick="openLightbox(6)">
+                <img src="https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?w=600" alt="وجبة صحية" loading="lazy" class="w-full h-48 md:h-64 object-cover">
+                <div class="gallery-overlay"><p class="text-white text-sm font-bold">غذاء صحي</p></div>
+            </div>
+            <!-- صورة 8 -->
+            <div class="gallery-item" onclick="openLightbox(7)">
+                <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=600" alt="تمور مع القهوة" loading="lazy" class="w-full h-48 md:h-64 object-cover">
+                <div class="gallery-overlay"><p class="text-white text-sm font-bold">رفيق القهوة المثالي</p></div>
+            </div>
+        </div>
+        <!-- ⚠️ صور Unsplash مؤقتة — استبدلها بصور منتجك الحقيقية (ImgBB) ثم حدّث مصفوفة galleryImages في السكربت بنفس الترتيب -->
+    </section>
+
+    <!-- Lightbox (نافذة تكبير الصور) -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        <span class="lightbox-nav lightbox-prev" onclick="changeImage(-1); event.stopPropagation()">&#10094;</span>
+        <img id="lightbox-img" src="" alt="صورة مكبرة">
+        <span class="lightbox-nav lightbox-next" onclick="changeImage(1); event.stopPropagation()">&#10095;</span>
+        <div id="lightbox-counter" class="lightbox-counter">1 / 8</div>
+    </div>
+
+    <!-- ===== الباقات ===== -->
+    <h2 id="packs" class="text-3xl font-black text-center mb-10 text-green-900">إختر العرض المناسب لك 📦</h2>
+    <!-- ⚠️ الأسعار أدناه أمثلة — عدّلها بأسعارك الحقيقية (في البطاقات وفي PACKS بالسكربت) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+
+        <div class="bg-white rounded-3xl shadow-lg overflow-hidden relative">
+            <span class="absolute top-4 right-4 bg-green-700 text-white text-xs font-black px-3 py-1 rounded-full z-10">مثالي للتجربة</span>
+            <img src="https://images.unsplash.com/photo-1609103803251-fa950189ebc1?w=600" alt="باقة 3 كغ من دقلة نور" loading="lazy" class="w-full h-48 object-cover">
+            <div class="p-6 text-center">
+                <h3 class="text-2xl font-black text-green-900 mb-2">صندوق 3 كغ</h3>
+                <p class="text-gray-600 mb-4">جرّب الجودة الأولى — مثالي للعزائم الصغيرة</p>
+                <p class="text-3xl font-black text-amber-600 mb-1">2,500 دج</p>
+                <p class="text-gray-500 font-bold text-sm mb-4">+ رسوم توصيل حسب الولاية</p>
+                <button data-pack="3kg" class="w-full bg-green-700 hover:bg-green-800 text-white font-bold py-3 rounded-xl transition">اطلب هذه الباقة</button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden relative ring-4 ring-amber-400">
+            <span class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-black px-3 py-1 rounded-full z-10">الأكثر طلباً ⭐</span>
+            <img src="https://images.unsplash.com/photo-1577003833154-a9a2e0fe1998?w=600" alt="باقة 6 كغ من دقلة نور" loading="lazy" class="w-full h-48 object-cover">
+            <div class="p-6 text-center">
+                <h3 class="text-2xl font-black text-green-900 mb-2">صندوق 6 كغ</h3>
+                <p class="text-gray-600 mb-4">الحجم المثالي للعائلة — يكفي شهراً كاملاً</p>
+                <p class="text-3xl font-black text-amber-600 mb-1">4,800 دج</p>
+                <p class="text-green-600 font-bold text-sm mb-4">🚚 توصيل مجاني مشمول</p>
+                <button data-pack="6kg" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 rounded-xl transition">اطلب هذه الباقة</button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-lg overflow-hidden relative">
+            <span class="absolute top-4 right-4 bg-green-800 text-white text-xs font-black px-3 py-1 rounded-full z-10">VIP 💎</span>
+            <img src="https://images.unsplash.com/photo-1628599091862-62d5b9e0e07f?w=600" alt="باقة VIP 10 كغ من دقلة نور" loading="lazy" class="w-full h-48 object-cover">
+            <div class="p-6 text-center">
+                <h3 class="text-2xl font-black text-green-900 mb-2">باقة VIP 10 كغ</h3>
+                <p class="text-gray-600 mb-4">أفضل قيمة مقابل السعر — للعائلات الكبيرة والهدايا</p>
+                <p class="text-3xl font-black text-amber-600 mb-1">7,500 دج</p>
+                <p class="text-green-600 font-bold text-sm mb-4">🚚 توصيل مجاني + تعبئة هدايا 🎁</p>
+                <button data-pack="10kg" class="w-full bg-green-700 hover:bg-green-800 text-white font-bold py-3 rounded-xl transition">اطلب هذه الباقة</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== شهادات العملاء ===== -->
+    <section class="mb-16 bg-gradient-to-br from-green-50 to-amber-50 p-8 md:p-12 rounded-[3rem]">
+        <h2 class="text-3xl font-black text-center mb-3 text-green-900">ماذا قال عملاؤنا؟ ⭐</h2>
+        <p class="text-center text-gray-600 mb-10">تجارب حقيقية من زبنائنا عبر الجزائر</p>
+        <!-- ⚠️ الشهادات أدناه نموذجية للعرض فقط — استبدلها بشهادات حقيقية بإذن أصحابها وصورهم (إن وافقوا) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-3xl shadow p-6">
+                <div class="flex items-center gap-3 mb-3">
+                    <img src="https://ui-avatars.com/api/?name=Ahmed&background=16a34a&color=fff&size=64" alt="أحمد" class="w-12 h-12 rounded-full">
+                    <div>
+                        <p class="font-black text-green-900">أحمد — وهران</p>
+                        <p class="text-amber-500">★★★★★</p>
+                    </div>
+                </div>
+                <p class="text-gray-700">«التمور وصلت طازجة ونظيفة، والتعبئة محترمة جداً. طلبت الصندوق الكبير للعائلة — تجربة تستحق التكرار.»</p>
+            </div>
+            <div class="bg-white rounded-3xl shadow p-6">
+                <div class="flex items-center gap-3 mb-3">
+                    <img src="https://ui-avatars.com/api/?name=Fatima&background=16a34a&color=fff&size=64" alt="فاطمة" class="w-12 h-12 rounded-full">
+                    <div>
+                        <p class="font-black text-green-900">فاطمة — الجزائر</p>
+                        <p class="text-amber-500">★★★★★</p>
+                    </div>
+                </div>
+                <p class="text-gray-700">«توصيل سريع وذوق أصلي مثل تمور بسكرة المعروفة. صار صندوقي الشهري ثابت عندهم.»</p>
+            </div>
+            <div class="bg-white rounded-3xl shadow p-6">
+                <div class="flex items-center gap-3 mb-3">
+                    <img src="https://ui-avatars.com/api/?name=Yacine&background=16a34a&color=fff&size=64" alt="ياسين" class="w-12 h-12 rounded-full">
+                    <div>
+                        <p class="font-black text-green-900">ياسين — قسنطينة</p>
+                        <p class="text-amber-500">★★★★☆</p>
+                    </div>
+                </div>
+                <p class="text-gray-700">«خدمة الزبناء محترمة، تأكدوا من طلبي بالهاتف قبل الإرسال. الدفع عند الاستلام ريّحني.»</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== نموذج الطلب ===== -->
+    <section id="order" class="bg-white rounded-[3rem] shadow-xl p-8 md:p-12 mb-16">
+        <h2 class="text-3xl font-black text-center mb-3 text-green-900">اطلب الآن 📝</h2>
+        <p class="text-center text-gray-600 mb-2">املأ معلوماتك وسنتصل بك للتأكيد — الدفع عند الاستلام متاح 💵</p>
+        <!-- عداد مخزون صادق: يُحدَّث يدوياً من REAL_STOCK في السكربت — بلا عدّاد تنازلي زائف عمداً -->
+        <p class="text-center text-amber-600 font-bold mb-10">🔥 الكمية محدودة — المتبقي هذه الجولة: <span id="stock_display">47</span> صندوقاً</p>
+
+        <form id="orderForm" class="space-y-5 max-w-xl mx-auto" novalidate>
+            <div>
+                <label for="full_name" class="block font-bold text-green-900 mb-1">الاسم الكامل</label>
+                <input type="text" id="full_name" class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-green-600 transition" placeholder="مثال: محمد أمين">
+            </div>
+            <div>
+                <label for="phone" class="block font-bold text-green-900 mb-1">رقم الهاتف</label>
+                <input type="tel" id="phone" inputmode="tel" class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-green-600 transition" placeholder="06 XX XX XX XX">
+                <p class="text-xs text-gray-500 mt-1">يقبل الأرقام العربية ٠١٢٣٤٥٦٧٨٩ ويحوّلها تلقائياً</p>
+            </div>
+            <div>
+                <label for="wilaya" class="block font-bold text-green-900 mb-1">الولاية</label>
+                <select id="wilaya" class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 bg-white focus:outline-none focus:border-green-600 transition">
+                    <option value="">— اختر ولايتك —</option>
+                    <option value="01">01 — أدرار</option>
+                    <option value="02">02 — الشلف</option>
+                    <option value="03">03 — الأغواط</option>
+                    <option value="04">04 — أم البواقي</option>
+                    <option value="05">05 — باتنة</option>
+                    <option value="06">06 — بجاية</option>
+                    <option value="07">07 — بسكرة</option>
+                    <option value="08">08 — بشار</option>
+                    <option value="09">09 — البليدة</option>
+                    <option value="10">10 — البويرة</option>
+                    <option value="11">11 — تمنراست</option>
+                    <option value="12">12 — تبسة</option>
+                    <option value="13">13 — تلمسان</option>
+                    <option value="14">14 — تيارت</option>
+                    <option value="15">15 — تيزي وزو</option>
+                    <option value="16">16 — الجزائر</option>
+                    <option value="17">17 — الجلفة</option>
+                    <option value="18">18 — جيجل</option>
+                    <option value="19">19 — سطيف</option>
+                    <option value="20">20 — سعيدة</option>
+                    <option value="21">21 — سكيكدة</option>
+                    <option value="22">22 — سيدي بلعباس</option>
+                    <option value="23">23 — عنابة</option>
+                    <option value="24">24 — قالمة</option>
+                    <option value="25">25 — قسنطينة</option>
+                    <option value="26">26 — المدية</option>
+                    <option value="27">27 — مستغانم</option>
+                    <option value="28">28 — المسيلة</option>
+                    <option value="29">29 — معسكر</option>
+                    <option value="30">30 — ورقلة</option>
+                    <option value="31">31 — وهران</option>
+                    <option value="32">32 — البيض</option>
+                    <option value="33">33 — إليزي</option>
+                    <option value="34">34 — برج بوعريريج</option>
+                    <option value="35">35 — بومرداس</option>
+                    <option value="36">36 — الطارف</option>
+                    <option value="37">37 — تندوف</option>
+                    <option value="38">38 — تيسمسيلت</option>
+                    <option value="39">39 — الوادي</option>
+                    <option value="40">40 — خنشلة</option>
+                    <option value="41">41 — سوق أهراس</option>
+                    <option value="42">42 — تيبازة</option>
+                    <option value="43">43 — ميلة</option>
+                    <option value="44">44 — عين الدفلى</option>
+                    <option value="45">45 — النعامة</option>
+                    <option value="46">46 — عين تموشنت</option>
+                    <option value="47">47 — غرداية</option>
+                    <option value="48">48 — غليزان</option>
+                    <option value="49">49 — تيميمون</option>
+                    <option value="50">50 — برج باجي مختار</option>
+                    <option value="51">51 — أولاد جلال</option>
+                    <option value="52">52 — بني عباس</option>
+                    <option value="53">53 — عين صالح</option>
+                    <option value="54">54 — عين قزام</option>
+                    <option value="55">55 — تقرت</option>
+                    <option value="56">56 — جانت</option>
+                    <option value="57">57 — المغير</option>
+                    <option value="58">58 — المنيعة</option>
+                </select>
+            </div>
+            <div>
+                <label for="pack_select" class="block font-bold text-green-900 mb-1">الباقة</label>
+                <select id="pack_select" class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 bg-white focus:outline-none focus:border-green-600 transition">
+                    <option value="3kg">صندوق 3 كغ — 2,500 دج</option>
+                    <option value="6kg" selected>صندوق 6 كغ — 4,800 دج (توصيل مجاني)</option>
+                    <option value="10kg">باقة VIP 10 كغ — 7,500 دج (توصيل مجاني)</option>
+                </select>
+            </div>
+            <div>
+                <label class="block font-bold text-green-900 mb-1">الكمية</label>
+                <div class="flex items-center gap-3">
+                    <button type="button" onclick="changeQty(-1)" class="w-12 h-12 rounded-xl bg-green-100 text-green-800 text-2xl font-black hover:bg-green-200 transition">−</button>
+                    <input type="number" id="quantity" value="1" min="1" max="99" readonly class="w-20 text-center text-xl font-black border-2 border-gray-200 rounded-xl py-2">
+                    <button type="button" onclick="changeQty(1)" class="w-12 h-12 rounded-xl bg-green-100 text-green-800 text-2xl font-black hover:bg-green-200 transition">+</button>
+                    <span class="text-gray-600">صندوق — <span id="quantity_display">1</span></span>
+                </div>
+            </div>
+
+            <div id="total_price_box" class="bg-green-50 border-2 border-green-100 rounded-2xl p-5 text-center">
+                <p class="text-xl font-black text-green-900">💰 الإجمالي: <span id="total_price" class="text-2xl text-amber-600">—</span> دج</p>
+                <p id="delivery_note" class="text-sm font-bold text-green-700 mt-1">—</p>
+            </div>
+
+            <!-- فخ السبام الحسّي: مخفي عن الزائر الحقيقي — إن مُلئ يُعتبر الطلب بوتاً ويُهمل -->
+            <input type="text" id="website" name="website" class="hidden" tabindex="-1" autocomplete="off">
+
+            <p id="form_error" class="hidden text-red-600 font-bold text-center bg-red-50 border-2 border-red-100 rounded-xl py-3 px-4"></p>
+
+            <button type="submit" id="submit_btn" class="w-full bg-green-700 hover:bg-green-800 text-white font-black text-lg py-4 rounded-2xl transition">✅ تأكيد الطلب</button>
+        </form>
+
+        <!-- رسالة التأكيد (كانت ناقصة في التحليل — أُضيفت) -->
+        <div id="success_box" class="hidden max-w-xl mx-auto mt-6 bg-green-50 border-2 border-green-200 rounded-2xl p-6">
+            <p class="text-green-800 font-black text-lg mb-2">🎉 تم استلام طلبك بنجاح!</p>
+            <p class="text-gray-700 mb-4">سنتصل بك قريباً على رقمك لتأكيد الطلب. هذه تفاصيله:</p>
+            <div id="success_summary" class="text-sm bg-white rounded-xl border border-green-100 p-4 leading-7 text-gray-800"></div>
+        </div>
+
+        <div class="text-center mt-8 text-gray-600">
+            <p class="font-bold mb-2">أو تواصل مباشرة:</p>
+            <a id="whatsapp_link" href="#" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl transition mr-2">واتساب 💬</a>
+            <a id="call_link" href="#" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-xl transition">اتصال ☎️</a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-green-950 text-green-100 text-center py-8 px-4">
+    <p class="font-black text-lg">دقلة نور الواحات 🌴</p>
+    <p class="text-sm mt-2 opacity-80">تمور بسكرة الأصلية — توصيل لكل ولايات الجزائر</p>
+    <!-- ⚠️ أضف هنا: السجل التجاري، العنوان، وشعارات الدفع المدعومة — لبناء المصداقية -->
+</footer>
+
+<!-- أزرار ثابتة للهواتف المحمولة -->
+<div class="mobile-sticky-btn">
+    <a id="sticky_whatsapp" href="#" class="bg-green-500 text-white font-bold py-3 rounded-xl text-center">💬 واتساب</a>
+    <a id="sticky_call" href="#" class="bg-amber-500 text-white font-bold py-3 rounded-xl text-center">☎️ اتصال</a>
+</div>
+
+<script>
+    // ================================================================
+    // ⚠️ الإعدادات الخاصة — عدّل هذه القيم قبل النشر
+    // ================================================================
+    const SCRIPT_URL = 'PASTE_YOUR_GOOGLE_APPS_SCRIPT_URL_HERE'; // رابط Web App من Deploy في Apps Script
+    const WHATSAPP_NUMBER = '213XXXXXXXXX';  // رقم واتساب بالصيغة الدولية بلا + (مثال: 213661234567)
+    const CALL_NUMBER = '+213XXXXXXXXX';     // رقم الاتصال
+    const REAL_STOCK = 47;                   // ⚠️ المخزون الحقيقي — حدّثه يدوياً كل جولة (شفافية بلا عدّاد زائف)
+
+    // ⚠️ الأسعار أمثلة — عدّلها بأسعارك الحقيقية (delivery: 0 = توصيل مجاني)
+    const PACKS = {
+        '3kg':  { name: 'صندوق 3 كغ',      price: 2500, delivery: 600 },
+        '6kg':  { name: 'صندوق 6 كغ',      price: 4800, delivery: 0 },
+        '10kg': { name: 'باقة VIP 10 كغ',  price: 7500, delivery: 0 }
+    };
+
+    // ===== صور المعرض (نفس ترتيب الشبكة أعلاه) =====
+    const galleryImages = [
+        'https://images.unsplash.com/photo-1609103803251-fa950189ebc1?w=1200',
+        'https://images.unsplash.com/photo-1577003833154-a9a2e0fe1998?w=1200',
+        'https://images.unsplash.com/photo-1628599091862-62d5b9e0e07f?w=1200',
+        'https://images.unsplash.com/photo-1607082349566-187342175e2f?w=1200',
+        'https://images.unsplash.com/photo-1587241321921-91a834d82ccb?w=1200',
+        'https://images.unsplash.com/photo-1591206369811-4eeb2f03bc95?w=1200',
+        'https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?w=1200',
+        'https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=1200'
+    ];
+    let currentImageIndex = 0;
+
+    // ===== Lightbox =====
+    function openLightbox(index) {
+        currentImageIndex = index;
+        document.getElementById('lightbox').classList.add('active');
+        document.getElementById('lightbox-img').src = galleryImages[index];
+        updateCounter();
+        document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox(event) {
+        if (!event || event.target.id === 'lightbox' || event.target.classList.contains('lightbox-close')) {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    }
+    function changeImage(direction) {
+        currentImageIndex += direction;
+        if (currentImageIndex < 0) currentImageIndex = galleryImages.length - 1;
+        if (currentImageIndex >= galleryImages.length) currentImageIndex = 0;
+        document.getElementById('lightbox-img').src = galleryImages[currentImageIndex];
+        updateCounter();
+    }
+    function updateCounter() {
+        document.getElementById('lightbox-counter').textContent = (currentImageIndex + 1) + ' / ' + galleryImages.length;
+    }
+    // التنقل بالكيبورد — منطق RTL: السهم الأيمن = السابق، الأيسر = التالي
+    document.addEventListener('keydown', function(e) {
+        if (document.getElementById('lightbox').classList.contains('active')) {
+            if (e.key === 'ArrowLeft') changeImage(1);
+            if (e.key === 'ArrowRight') changeImage(-1);
+            if (e.key === 'Escape') closeLightbox();
+        }
+    });
+
+    // ===== عناصر النموذج =====
+    const packSelect = document.getElementById('pack_select');
+    const quantityInput = document.getElementById('quantity');
+    const qtyDisplay = document.getElementById('quantity_display');
+    const totalPriceDisplay = document.getElementById('total_price');
+    const totalPriceBox = document.getElementById('total_price_box');
+    const orderForm = document.getElementById('orderForm');
+
+    function changeQty(amount) {
+        let q = parseInt(quantityInput.value) || 1;
+        q = Math.max(1, Math.min(99, q + amount));
+        quantityInput.value = q;
+        updateTotal();
+    }
+    function formatDZD(n) { return Number(n).toLocaleString('en-US'); }
+
+    function updateTotal() {
+        const p = PACKS[packSelect.value];
+        const q = parseInt(quantityInput.value) || 1;
+        const total = p.price * q + p.delivery;
+        totalPriceDisplay.textContent = formatDZD(total);
+        qtyDisplay.textContent = q;
+        document.getElementById('delivery_note').textContent = p.delivery === 0
+            ? '🚚 توصيل مجاني مشمول في هذه الباقة'
+            : '🚚 يشمل رسوم توصيل ' + formatDZD(p.delivery) + ' دج — مجاني للباقات الأكبر';
+    }
+    packSelect.addEventListener('change', updateTotal);
+    quantityInput.addEventListener('change', updateTotal);
+
+    // أزرار «اطلب هذه الباقة» في بطاقات الباقات
+    document.querySelectorAll('[data-pack]').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            packSelect.value = btn.dataset.pack;
+            updateTotal();
+            document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    // ===== التحقق من الحقول =====
+    // يحوّل الأرقام العربية ٠-٩ إلى لاتينية قبل الفحص
+    function normalizePhone(v) {
+        return String(v).replace(/[٠-٩]/g, function(d) { return '٠١٢٣٤٥٦٧٨٩'.indexOf(d); });
+    }
+    function validate() {
+        const name = document.getElementById('full_name');
+        const phone = document.getElementById('phone');
+        const wilaya = document.getElementById('wilaya');
+        [name, phone, wilaya].forEach(function(f) { f.classList.remove('input-error'); });
+        const problems = [];
+        if (name.value.trim().length < 3) { name.classList.add('input-error'); problems.push('الاسم الكامل (3 أحرف على الأقل)'); }
+        const ph = normalizePhone(phone.value.trim());
+        if (!/^0(5|6|7)\d{8}$/.test(ph)) { phone.classList.add('input-error'); problems.push('رقم هاتف جزائري صحيح (مثال: 0661234567)'); }
+        if (!wilaya.value) { wilaya.classList.add('input-error'); problems.push('الولاية'); }
+        return { ok: problems.length === 0, message: 'يرجى إدخال: ' + problems.join(' · '), phone: ph };
+    }
+    function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+    // ===== الإرسال =====
+    orderForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const errBox = document.getElementById('form_error');
+        errBox.classList.add('hidden');
+
+        // فخ البوتات: حقل العسل مخفي إن مُلئ → نتجاهل الطلب بصمت
+        if (document.getElementById('website').value) { return; }
+
+        const v = validate();
+        if (!v.ok) {
+            errBox.textContent = '⚠️ ' + v.message;
+            errBox.classList.remove('hidden');
+            errBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            return;
+        }
+
+        const btn = document.getElementById('submit_btn');
+        btn.disabled = true;
+        const oldLabel = btn.textContent;
+        btn.textContent = '⏳ جاري الإرسال...';
+
+        const p = PACKS[packSelect.value];
+        const q = parseInt(quantityInput.value) || 1;
+        const order = {
+            full_name: document.getElementById('full_name').value.trim(),
+            phone: v.phone,
+            wilaya: document.getElementById('wilaya').options[document.getElementById('wilaya').selectedIndex].text,
+            pack: p.name,
+            quantity: q,
+            total: p.price * q + p.delivery,
+            timestamp: new Date().toISOString()
+        };
+
+        try {
+            if (SCRIPT_URL.indexOf('PASTE_') === 0) {
+                // وضع تجريبي: لم يُضبط رابط الاستقبال بعد — لا يُرسل شيء فعلياً
+                console.info('وضع تجريبي — اضبط SCRIPT_URL قبل النشر. الطلب:', order);
+                await new Promise(function(r) { setTimeout(r, 600); });
+            } else {
+                await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams(order).toString()
+                });
+            }
+            showSuccess(order);
+        } catch (err) {
+            errBox.textContent = '⚠️ تعذّر إرسال الطلب — تحقق من اتصالك وحاول مجدداً.';
+            errBox.classList.remove('hidden');
+            btn.disabled = false;
+            btn.textContent = oldLabel;
+            return;
+        }
+        btn.disabled = false;
+        btn.textContent = oldLabel;
+    });
+
+    function showSuccess(o) {
+        document.getElementById('success_summary').innerHTML =
+            '<b>الاسم:</b> ' + esc(o.full_name) + '<br>' +
+            '<b>الهاتف:</b> ' + esc(o.phone) + '<br>' +
+            '<b>الولاية:</b> ' + esc(o.wilaya) + '<br>' +
+            '<b>الباقة:</b> ' + esc(o.pack) + ' × ' + o.quantity + '<br>' +
+            '<b>الإجمالي:</b> ' + formatDZD(o.total) + ' دج';
+        const box = document.getElementById('success_box');
+        box.classList.remove('hidden');
+        box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        orderForm.reset();
+        quantityInput.value = 1;
+        updateTotal();
+    }
+
+    // ===== التهيئة الأولية =====
+    document.getElementById('stock_display').textContent = REAL_STOCK;
+    const waText = encodeURIComponent('مرحباً، أريد طلب تمور دقلة نور 🌴');
+    ['whatsapp_link', 'sticky_whatsapp'].forEach(function(id) {
+        document.getElementById(id).href = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + waText;
+    });
+    ['call_link', 'sticky_call'].forEach(function(id) {
+        document.getElementById(id).href = 'tel:' + CALL_NUMBER;
+    });
+    updateTotal();
+</script>
+</body>
+</html>
