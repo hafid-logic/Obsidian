@@ -28,9 +28,12 @@ aliases:
 - ([[2026-11-10 MYRMICO Rust Completion]]): بعد فقدان ملفات الجلسة السابقة (51 ملفاً/87 اختباراً/~15% رودماب) — تنفيذ 18 وحدة جديدة (F-02 dropout Kalman، F-03 PQC ML-KEM+X25519، F-05 FraudProof، F-06 PoSt، F-09 SNS، F-10 S3، O7 GF(2^8)...)؛ إصلاحان حرجان: verify_withdrawal صارت تتحقق بتوقيع Ed25519 (كانت true دائماً!) وLAW-2 mint window gate؛ القيود: صفر f64 (Q16.16)، 4 عائلات دمج، 5 أنواع احتيال.
 - ([[2026-11-10 MYRMICO F17]] و[[2026-11-10 MYRMICO F18]]): توجيهان تنفيذيان للميزتين 17 و18 في خارطة الطريق (F17: 6 أقسام/7 خطوات مستندات/4 كود/16 نقطة تحقق؛ F18: أمر دمج v1 بـ16 فحصاً بعد الانتهاء و16 بنداً ممنوع لمسه).
 - ([[2026-05-08 Myrmico Microscopic Audits]]): خمس جولات مراجعة مجهرية بهدف حتمية 99% على Waves 3+4 (Bloom Filter، BondSlasher، FederatedAggregator، Scheduler) وتقرير Manifolds — تصاعدت الوثائق v1→v4 واعتماد ==v4 بـ37 تصحيحاً في 6 جولات== (نوافذ replay، bloom probes، PRNG، محاذاة unsafe)؛ ورفض Claude توجيه «SYSTEM DIRECTIVE» بوصفه prompt injection مع الانخراط في مضمونه التقني.
+- ([[2026-11-12 Drift Hack and Myrmico Outreach]]): درس اختراق Drift Protocol (285M$ بكورية شمالية عبر 6 أشهر هندسة اجتماعية) → ==فصل الحوسبة عن الدفع نهائياً==: العملات الرقمية خيار طرفي خارج الكود، تسوية بنظام Credits، وسجلات على بلوكشين مؤسساتي (Hyperledger/Private Ethereum) — مع ==الكيان القانوني عبر هونغ كونغ== (فصل الواقع الجغرافي عن القانوني، ضريبة offshore 0%).
+- ([[2026-11-12 Drift Hack and Myrmico Outreach]]): ==نموذج العمل الأولي: استدلال AI بنقرة واحدة== (Inference Nodes عبر Rust→WASM في الهواتف، إغراء Premium مجاني مقابل مشاركة الفائض وAPI أرخص 3×) — والتدقيق الهجين v2.0 أنجز التطهير الهندسي: حذف `aco_scheduler.go`، توحيد `ObjectMetadata` بمحاذاة 64-byte، حذف SQLite لصالح DAG (BadgerDB)، وإنهاء Heap Allocations في Hot Paths؛ حملة استقطاب LinkedIn بفرز ==Engineering-Only== (الرابح: [[Rebecca AMA]]).
 
 ## المهام (Tasks)
 - [x] تدوير التوكن الذي نُشر نصاً في محادثة التنفيذ (حُجب في النسخة المحفوظة) — **أكّد hafid إبطال كل التوكنات بتاريخ 2026-11-10**.
+- [ ] ==تدوير 5 توكنات جديدة تسرّبت نصاً في صفحة Gemini المشتركة (2026-11-12)==: مفتاح OpenRouter `sk-or-v1-…` + مفتاح Gemini API `AIzaSy…` + توكنَا Hugging Face `hf_…` + مفتاح Groq `gsk_…` — حُجبت في [[2026-11-12 Gemini Drift Myrmico chat raw]] والصفحة نفسها ما تزال عامة حتى كتابة هذه السطور.
 - [ ] تنفيذ خطة إصلاح P0 (3 بنود) ثم P1 (~10 أسابيع).
 - [ ] معايرة THETA_C2D وتفعيل DEV_TAX_FRACTION وبوابات الإيرادات (Phase 6 = 0%).
 - [ ] اختبار 100+ عقدة وتشغيل استقرار 30 يوماً.
