@@ -14,6 +14,7 @@ tags:
 > [!info] المصدر (Source)
 > [الرابط الأصلي للمحادثة](https://share.gemini.google/mvF1XvCd1F0m) — صفحة Gemini مشتركة، أُرشفت بتاريخ 2026-11-12.
 > رابط ثانٍ لنفس المحادثة (نسخة مكررة): <https://share.gemini.google/ayXEp7AVo6Wf>
+> رابط ثالث لنفس المحادثة (نسخة مكررة، أُكِّد بتقاطه في 2026-11-14): <https://share.gemini.google/otMNKERQtyTq> — تاريخ إنشاء المحادثة الأصلي: 2026-08-10 (Created with Auto).
 
 ## الملخص (Summary)
 - محادثة قصيرة من دور واحد (مشاركة مزدوجة بالرابطين): ==تعبئة نموذج برنامج AWS «Idea to Frontier»== (صفحة هونغ كونغ: aws.amazon.com/local/hongkong/idea-to-frontier/) — جمع كل المعلومات المطلوبة لملء النموذج.

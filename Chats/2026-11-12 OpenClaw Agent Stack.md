@@ -13,6 +13,7 @@ tags:
 
 > [!info] المصدر (Source)
 > [الرابط الأصلي للمحادثة](https://share.gemini.google/pVBjpZvsk55N) — صفحة Gemini مشتركة، أُرشفت بتاريخ 2026-11-12.
+> رابط ثانٍ لنفس المحادثة (نسخة مكررة، أُكِّد بتقاطه في 2026-11-14): <https://share.gemini.google/vIryUfalh0t1> — تاريخ إنشاء المحادثة الأصلي: 2026-03-18 (Created with Auto).
 
 ## الملخص (Summary)
 - أطول جلسات مسار المنصة (160 دوراً، 541 ألف محرف): فهم ضجيج [[OpenClaw]] — ==250 ألف نجمة في 60 يوماً (الأسرع في تاريخ GitHub)==، وكيل ذكي self-hosted «يفعل» لا «يجيب»، يعمل 24/7، يتكامل مع WhatsApp/Telegram/Discord، وله متجر مهارات (Claw Hub) — مع ==تحذيراته الأمنية: مهارات خبيثة، صلاحيات عميقة، عزل Container إلزامي==، وتاريخ تسميته Clawdbot ← Moltbot ← OpenClaw تحت ضغط Anthropic.
